@@ -23,7 +23,7 @@ use Drupal\commerce_price\Price;
  *   ),
  *   handlers = {
  *     "storage" = "Drupal\commerce\CommerceContentEntityStorage",
- *     "access" = "Drupal\commerce\EntityAccessControlHandler",
+ *     "access" = "Drupal\Core\Entity\EntityAccessControlHandler",
  *     "permission_provider" = "Drupal\commerce\EntityPermissionProvider",
  *     "route_provider" = {
  *       "default" = "Drupal\Core\Entity\Routing\AdminHtmlRouteProvider",
