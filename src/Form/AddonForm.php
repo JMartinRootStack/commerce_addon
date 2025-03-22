@@ -14,7 +14,7 @@ class AddonForm extends ContentEntityForm {
     /** @var \Drupal\commerce_addon\Entity\AddonInterface $addon */
     $addon = $this->getEntity();
     $addon->save();
-    drupal_set_message($this->t('The addon %label has been successfully saved.', ['%label' => $addon->label()]));
+    \Drupal::messenger()->addMessage($this->t('The addon %label has been successfully saved.', ['%label' => $addon->label()]));
     $form_state->setRedirect('entity.commerce_addon.collection');
   }
 

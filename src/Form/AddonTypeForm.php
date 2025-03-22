@@ -47,7 +47,7 @@ class AddonTypeForm extends CommerceBundleEntityFormBase {
     $this->entity->save();
     $this->submitTraitForm($form, $form_state);
 
-    drupal_set_message($this->t('Saved the %label addon type.', ['%label' => $this->entity->label()]));
+    \Drupal::messenger()->addMessage($this->t('Saved the %label addon type.', ['%label' => $this->entity->label()]));
     $form_state->setRedirect('entity.commerce_addon_type.collection');
   }
 
