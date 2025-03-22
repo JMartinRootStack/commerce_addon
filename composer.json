@@ -11,5 +11,8 @@
     },
     "require": {
       "drupal/commerce": "~2.0 || ~3.0"
+    },
+    "replace": {
+      "drupal/commerce_addon": "^1.0"
     }
   }
